@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+
+{% block main %}
+<section id="block">
+
+    <div id="head">
+        <img id="Carlyon_Pic" src="{{ url_for('static', filename = 'thebest.jpg')}}" alt="Carlyon">
+        <h1 id="Name">Carlyon Jones-Armour</h1>
+        <h3>@carlyonjones</h3>
+        <h3>
+            Kinston, Jamaica
+        </h3>
+        <h3> {{ date }} </h3>
+
+    </div>
+    <div id="body">
+        <p>
+            Once apon a time i would have want to just sleep but now i feel it is fun to create some stuff. I do like sleep too and fruits also. I do love some dreams.
+        </p>
+
+        <div id="values">
+            <div>
+                <h3>2</h3>
+                <p>Posts</p>
+            </div>
+            <div>
+                <h3>50</h3>
+                <p>Following</p>
+            </div>
+            <div>
+                <h3>All</h3>
+                <p>Followers</p>
+
+            </div>
+        </div>
+
+        <button>
+            Follow
+        </button>
+    </div>
+
+</section>
+{% endblock %}
